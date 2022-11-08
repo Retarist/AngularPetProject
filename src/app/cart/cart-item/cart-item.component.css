@@ -1,0 +1,133 @@
+li, a {
+    font-weight: 300;
+    font-size: 28px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.stuff__list {
+    max-width: 73%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.stuff {
+    display: flex;
+    justify-content: space-between;
+    min-width: 550px;
+    min-height: 220px;
+    max-width: 550px;
+    max-height: 220px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.stuff-item__description__container {
+    display: flex;
+    justify-content: center;
+}
+
+.stuff-item__price__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+.stuff-item__price__quantity__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.stuff-item__picture {
+    max-width: 200px;
+    max-height: 250px;
+    pointer-events: none;
+}
+
+.stuff-item__description{
+    padding: 15px;
+}
+
+.stuff-item__name {
+    margin-top: 10px;
+    font-size: 26px;
+    font-weight: 200;
+}
+
+.stuff-item__price {
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 50%;
+}
+
+.stuff-item__quantity__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Poppins';
+    font-size: 22px;
+    height: 35px;
+    width: 90px;
+    margin-top: 50%;
+    border-radius: 10px;
+
+    transition: all .2s;
+}
+
+.stuff-item__quantity__wrapper span.num {
+    font-size: 19px;
+    pointer-events: none;
+}
+
+.stuff-item__quantity__wrapper span.minus {
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.stuff-item__quantity__wrapper span.plus {
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.stuff-item__quantity__wrapper span.minus:hover {
+    color: #959595;
+    transition: all .2s;
+}
+
+.stuff-item__quantity__wrapper span.plus:hover {
+    color: #959595;
+    transition: all .2s;
+}
+
+.stuff-item__size, .stuff-item__size__param {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.stuff-item__size__param {
+    margin-left: 3%;
+}
+
+.stuff-item__size__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.stuff-item__close {
+    width: 18px;
+    height: 18px;
+}
+
+.stuff-item__close:hover {
+    cursor: pointer;
+}

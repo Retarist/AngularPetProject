@@ -1,17 +1,24 @@
 
 <header>
-<a href="#"><div class="logo">Fate</div></a>
-<nav>
-  <ul class="nav__links">
-    <li><a href="#">Delivery</a></li>
-    <li><a href="#">Contacts</a></li>
-    <li><a href="#">Refund</a></li>
-  </ul>
-</nav>
-<img class="shopping__cart" src="https://media.discordapp.net/attachments/972540573401620480/986684459170545735/403-4035278_png-file-svg-shopping-cart-icon-png-clipart.png?width=620&height=531">
-
+  <a href="#"><div class="logo">Fate Store</div></a>
+    <nav>
+      <ul class="nav__links">
+        <li><a href="#">Delivery</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">Refund</a></li>
+      </ul>
+    </nav>
+  <a class="shopping__cart__link" [routerLink]="['/cart']"><img class="shopping__cart" src="https://media.discordapp.net/attachments/972540573401620480/986684459170545735/403-4035278_png-file-svg-shopping-cart-icon-png-clipart.png?width=620&height=531"></a>
 </header>
 
-<main>
-  <div class="test"></div>
-</main>
+<router-outlet></router-outlet>
+
+<footer>
+  <div class="footer__info">
+    <div class="contact__info">fate@support.com</div>
+      <a href="#" class="policy__ref">
+        <div class="policy">Политика конфиденциальности</div>
+        <div class="policy">Договор оферты</div>
+      </a>
+  </div>
+</footer>

@@ -1,0 +1,15 @@
+<div class="dialog">
+    <div class="window">
+        <div class="form__checkout">
+            <div class="header">
+                <h1>{{ productItem.name }}</h1>
+            </div>
+            <div class="content">
+                <img [src]="productItem.imageURL" alt="" class="item-image">
+            </div>
+        </div>
+        <button (click)="handleAddToCart()" (click)="generalService.showDialog = false" class="checkout__button">Add to cart</button>
+    </div>
+    <div (click)="generalService.showDialog = false" class="close__div"></div>
+</div>
+

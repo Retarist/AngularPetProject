@@ -1,0 +1,121 @@
+h1 {
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.dialog {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.close__div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: -1;
+}
+
+.window {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 1000px;
+    height: 900px;
+    background-color: white;
+    margin-top: 0px;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    animation-name: window-to-top;
+    animation-duration: .3s;
+    transition-timing-function: cubic-bezier(0.000, 0.995, 0.185, 1.020);
+}
+
+.form__checkout {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    margin-top: 20px;
+}
+
+.fields__input {
+    margin-top: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item-image {
+    width: 200px;
+    height: 230px;
+}
+
+.select-item__size {
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+}
+
+input:focus,
+input:not(:placeholder-shown) {
+    border-bottom: 0.1rem solid black;
+}
+
+input:focus-visible ~ label,
+input:not(:placeholder-shown) ~ label {
+    cursor: default;
+    padding: 0;
+    color: black;
+    transform: translateY(1.2rem) translateX(-.5rem) scale(0.8);
+}
+
+.checkout__button {
+    width: 280px;
+    height: 55px;
+    border: none;
+    margin: 5px 30px 30px 30px;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 18px;
+    transition: .1s;
+}
+
+.checkout__button:hover {
+    color: #c4c4c4;
+    cursor: pointer;
+    transition: .1s;
+}
+
+@keyframes window-to-top{
+    0%{
+        opacity: 0%;
+        margin-top: 1000px;
+    }
+    100%{
+        opacity: 100%;
+        margin-top: 0px;
+    }
+}

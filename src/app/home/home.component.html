@@ -1,0 +1,6 @@
+<main>
+    <app-add-item *ngIf="generalService.showDialog"></app-add-item>
+    <div class="stuff__contanier">
+      <app-product-item [productItem]="product" *ngFor="let product of products"></app-product-item>
+    </div>
+</main>

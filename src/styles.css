@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 * {
+    -webkit-appearance: none;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -12,7 +15,7 @@ html {
 
 li, a {
     font-weight: 300;
-    font-size: 28px;
+    font-size: 20px;
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -21,16 +24,26 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
-    background: linear-gradient(269.81deg, rgba(116, 120, 163, 0.4) 0%, rgba(8, 8, 14, 0) 100%), #1B242E;
+    font-family: 'Open Sans';
+    padding: 12px 13%;
+    background-color: black;
     box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.25);
-    animation-name: header;
-    animation-duration: 1s;
+}
+
+.shopping__cart__link {
+    max-width: 24px;
+    max-height: 20px;
+}
+
+.shopping__cart {
+    max-width: 24px;
+    max-height: 20px;
+    pointer-events: none;
 }
 
 .logo {
     font-weight: 300;
-    font-size: 28px;
+    font-size: 20px;
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -50,22 +63,4 @@ header {
 
 .nav__links li a:hover, .logo:hover {
     color: #AEAEAE;
-}
-
-.shopping__cart {
-    max-width: 30px;
-}
-
-.test {
-    background-color: black;
-    height: 1000px;
-}
-
-@keyframes header {
-    0% {
-        top: 0;
-    }
-    50% {
-        top: 20px
-    }
 }

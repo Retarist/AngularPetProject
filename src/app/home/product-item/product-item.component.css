@@ -1,0 +1,45 @@
+.stuff__contanier {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 50px;
+    transition: 0.3s;
+}
+
+.stuff {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 100px;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.stuff:hover {
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease 0s;
+}
+
+.stuff__image {
+    width: 300px;
+    height: 330px;
+    cursor: pointer;
+}
+
+.stuff__name, .stuff__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: 300;
+    color: black;
+    cursor: pointer;
+}
+
+.stuff__price {
+    font-size: 20px;
+    font-weight: 600;
+}

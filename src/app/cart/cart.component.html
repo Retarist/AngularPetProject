@@ -1,0 +1,29 @@
+<div>
+    <div *ngIf="cartItems.length > 0" class="page__name">Shopping Cart</div>
+    <div *ngIf="cartItems.length === 0" class="alert alert-info">Your cart is empty</div>
+
+    <app-dialog *ngIf="generalService.showDialog"></app-dialog>
+    
+    <div *ngIf="cartItems.length > 0" class="content">
+        <div class="stuff__list">
+            <app-cart-item [cartItems]="item" *ngFor="let item of cartItems"></app-cart-item>
+        </div>
+        <div class="order-menu">
+            <div class="total-price__header">
+                <div class="black-line"></div>
+                <div class="total-price">
+                    <div class="total">Total:</div>
+                    <div class="price">${{ cartTotal }}</div>
+                </div>
+            </div>
+            <div class="footer-order__menu">
+                <div class="text-field text-field__floating">
+                    <input class="text-field__input" type="text" id="coupon" placeholder=" ">
+                    <label class="text-field__label" for="coupon">Coupon</label>
+                </div>
+                <a href="#" class="discount__clicktext"><div class="discount__clicktext">Apply discount code</div></a>
+                <button (click)="generalService.showDialog = true" class="continue__button">Continue to checkout</button>
+            </div>
+        </div>
+    </div>
+</div>

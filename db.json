@@ -1,0 +1,38 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Hoodie",
+      "size": "One Size",
+      "price": 19,
+      "imageURL": "https://illan-gifts.ru/api/image/1920x1080-fitnu/hudy-molti-oversize-pockets-chernoe-780777."
+    },
+    {
+      "id": 2,
+      "name": "Sweatshirt",
+      "size": "One Size",
+      "price": 29,
+      "imageURL": "https://cdn.shopify.com/s/files/1/0951/7126/products/1_BKL_19_W_SterlingSweatshirt_Black_768x.progressive.jpg?v=1582298539"
+    }
+  ],
+  "cart": [
+
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

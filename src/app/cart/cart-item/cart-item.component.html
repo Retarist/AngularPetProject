@@ -1,0 +1,24 @@
+<div class="stuff">
+    <div class="stuff-item__description__container">
+        <img class="stuff-item__picture" [src]="cartItems.imageURL">
+        <div class="stuff-item__description">
+            <div class="stuff-item__name">{{ cartItems.productName }}</div>
+            <div class="stuff-item__size__container">
+                <div class="stuff-item__size">Size:</div>
+                <div class="stuff-item__size__param">{{ cartItems.size }}</div>
+            </div>
+        </div>
+    </div> 
+    <div class="stuff-item__price__container">
+        <div class="stuff-item__price__quantity__container">
+            <div class="stuff-item__price">{{ cartItems.price }}$</div>
+            <div class="stuff-item__quantity__wrapper">
+                <span class="num">{{ cartItems.qty }}</span>
+            </div>
+        </div>
+    </div>
+    <svg class="stuff-item__close">
+        <rect x="16.1707" y="0.496826" width="1.17276" height="22.8689" transform="rotate(45 16.1707 0.496826)" fill="black"/>
+        <rect y="1.32617" width="1.17276" height="22.8689" transform="rotate(-45 0 1.32617)" fill="black"/>
+    </svg>
+</div>

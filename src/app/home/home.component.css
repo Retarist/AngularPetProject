@@ -1,0 +1,77 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+li, a {
+    font-weight: 300;
+    font-size: 28px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 13%;
+    background: linear-gradient(91.38deg, rgba(0, 148, 130, 0.2) 0%, rgba(0, 0, 0, 0) 26.69%), linear-gradient(91.25deg, rgba(177, 0, 43, 0.2) 0%, rgba(255, 255, 255, 0) 29.08%), linear-gradient(268.89deg, rgba(255, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0) 32.5%), linear-gradient(268.95deg, rgba(116, 120, 163, 0.4) 0%, rgba(8, 8, 14, 0) 29.77%), #000000;
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+    font-weight: 300;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a, .logo {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover, .logo:hover {
+    color: #AEAEAE;
+}
+
+.stuff__contanier {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 50px;
+    transition: 0.3s;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.contact__info {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.policy {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.policy__ref {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+}

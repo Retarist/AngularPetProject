@@ -1,1 +1,71 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+li, a {
+    font-weight: 300;
+    font-size: 28px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: linear-gradient(269.81deg, rgba(116, 120, 163, 0.4) 0%, rgba(8, 8, 14, 0) 100%), #1B242E;
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.25);
+    animation-name: header;
+    animation-duration: 1s;
+}
+
+.logo {
+    font-weight: 300;
+    font-size: 28px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a, .logo {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover, .logo:hover {
+    color: #AEAEAE;
+}
+
+.shopping__cart {
+    max-width: 30px;
+}
+
+.test {
+    background-color: black;
+    height: 1000px;
+}
+
+@keyframes header {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 20px
+    }
+}
